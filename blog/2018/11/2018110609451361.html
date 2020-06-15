@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>天猫店铺css实现鼠标滑过水波效果-韩都类目动效</title>
+</head>
+<body>
+	
+
+<style>
+body{ background: #333 }
+.water{width:165px; height: 240px; padding: 10px; border-radius: 10px; cursor: pointer; margin:200px auto; background: #555; }
+.water .img { float: left; width:165px; height: 165px; border-radius: 50%; overflow: hidden; position: relative;}
+.water .img img{position: relative; z-index: 10;}
+.water .img i{ display: block; position: absolute; z-index: 5; left: 0; right: 0; bottom: 0; top: 0; margin: auto; border: 20px solid #fff; width: 2px; height: 2px; border-radius: 50%; }
+.water:hover .img i{ border-width: 0px; width:165px; height: 165px; z-index: 20; opacity: 0; transition: 0.3s all linear;}
+.water .img b{ display: block; position: absolute; z-index: 5; left: 0; right: 0; bottom: 0; top: 0; margin: auto; border: 10px solid #ddd; width: 2px; height: 2px; border-radius: 50%; }
+.water:hover .img b{ border-width: 0px; width:165px; height: 165px; z-index: 20; opacity: 0; transition: 0.5s all linear;}
+.water .btm { float: left; width:165px; margin-top: 15px; line-height: 30px; text-align: center; color: #ddd; font-size: 14px;}
+.water .btm span{font-size:24px; color: #fff; height: 30px; overflow: hidden; display: inline-block;}
+
+</style>
+<div class="water">
+    <div class="img"><i></i><b></b>
+    	<img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN01It56zD28eLy4YzR9i_!!263817957.jpg" alt=""></div>
+        <div class="btm">
+            <span>羽绒服</span><br>两件X折
+    </div>
+</div>
+
+
+</body>
+</html>

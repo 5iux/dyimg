@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>谷百对比</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".btn").click(function(event) {
+            var w = window.screen.availWidth
+            var h = window.screen.availHeight;
+            var p = $(".p").val();
+            window.open("https://www.google.com/search?hl=zh&q=" + p, "_blank", "toolbar=no, location=no, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=no, width=" + w / 2 + ",left=" + w / 2 + ", height=" + h);
+            window.open("https://www.baidu.com/s?ie=utf-8&word=" + p, "_blank", "toolbar=no, location=no, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=no, width=" + w / 2 + ",left=0, height=" + h);
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <input class="p" type="text" value="" placeholder="谷歌百度对比搜索">
+    <input class="btn" type="button" value="点击搜索">
+</body>
+
+</html>
