@@ -37,7 +37,7 @@ a:hover,a:focus{color:#232323;text-decoration:none}
 .page-container .main-content:hover{z-index:15}
 .page .panel p,.page .comments-area p{font-size:15px;line-height:1.8}
 .sidebar-menu{display:table-cell;position:relative;width:250px;background:#fff;z-index:1; border-right:1px solid #eee;}
-.sidebar-menu .logo-env{padding:19px 30px; border-bottom:1px solid #eee;}
+.sidebar-menu .logo-env{padding:19px 30px;}
 .sidebar-menu .logo-env .logo{float:left}
 .sidebar-menu .logo-env .logo .logo-collapsed{display:none}
 .sidebar-menu .main-menu{padding:0 30px;margin-top:20px;margin-bottom:20px;list-style:none}
@@ -63,7 +63,7 @@ footer.main-footer .go-up a:hover{background-color:rgba(44,46,47,.1)}footer.main
 .sidebar-menu .main-menu a>span{display:inline-block}
 .sidebar-menu .main-menu a:hover{color:#29f}
 .sidebar-menu.fixed{height:100%}
-.sidebar-menu.fixed .sidebar-menu-inner{position:fixed;left:0;top:0;bottom:0;width:inherit;overflow:hidden}
+.sidebar-menu.fixed .sidebar-menu-inner{position:fixed;left:0;top:0;bottom:0;width:inherit;overflow:hidden; border-bottom: 1px solid #eee;}
 .sidebar-menu .main-menu ul{display:none;margin:0;padding:0;overflow:hidden;list-style:none}
 .sidebar-menu .main-menu ul li{position:relative}
 @media screen and (min-width:768px){.sidebar-menu .main-menu ul li.is-hidden{left:-20px;zoom:1;filter:alpha(opacity=0);-webkit-opacity:0;-moz-opacity:0;opacity:0}
@@ -132,7 +132,8 @@ footer.main-footer:after{clear:both}
 .user-info-navbar .user-info-menu>li>a i{font-size:15px;line-height:1}
 .user-info-navbar .user-info-menu>li>a:hover{color:#606161}
 .user-info-navbar .user-info-menu>li a[data-toggle=sidebar]{padding:31px 10px;padding-left:20px}
-@media screen and (max-width:767px){.page-container{display:block}
+@media screen and (max-width:767px){
+.page-container{display:block}
 .page-container .sidebar-menu,.page-container .main-content{display:block;width:100%;height:auto;position:absolute;top:60px}
 .page-container .sidebar-menu{position:fixed;z-index:999;top:0px}
 .page-container .sidebar-menu .sidebar-menu-inner{position:relative; background:#eee; }
@@ -305,6 +306,12 @@ input[type="button"],input[type="submit"]{background-color:#222;border:0;-webkit
 .s-type-list label{padding:5px 0}
 .search-type{overflow:hidden}
 .search-list{height:30px;overflow-y:hidden;overflow-x:scroll;white-space:nowrap}
+.sites-list .overflowClip_1{ font-size: 12px; line-height: 23px;}
+.sites-list .overflowClip_2{ display: none; }
+.sites-list .xe-card{ height: 56px; }
+.sites-list .xe-comment-entry img{width: 25px;}
+.sites-list .box2{ height: 56px; }
+.sites-list h5.text-gray{ font-size: 16px; }
 }
  
 /* --- tougao --- */
